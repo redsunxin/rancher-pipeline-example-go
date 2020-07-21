@@ -14,7 +14,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
+      tag: loongnix/example-helloserver:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: loongson.harbor.cn
     env:
