@@ -18,12 +18,12 @@ stages:
       pushRemote: true
       registry: loongson.harbor.cn
     env:
+      PLUGIN_ADD_HOST: loongson.harbor.cn:10.140.3.243
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
-      PLUGIN_REGISTRY: "loongson.harbor.cn"
-      PLUGIN_USERNAME: "admin"
-      PLUGIN_PASSWORD: "admin"
-      PLUGIN_ADD_HOST: "10.140.3.243 loongson.harbor.cn"
+      PLUGIN_PASSWORD: admin
+      PLUGIN_REGISTRY: loongson.harbor.cn
+      PLUGIN_USERNAME: admin
 - name: Deploy
   steps:
   - applyYamlConfig:
