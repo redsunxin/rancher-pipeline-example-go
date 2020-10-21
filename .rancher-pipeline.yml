@@ -29,8 +29,5 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
-branch:
-  include:
-  - master
-  event: [push,pull_request]
+branch: {}
 notification: {}
