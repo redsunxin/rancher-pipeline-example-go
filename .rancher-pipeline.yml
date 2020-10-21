@@ -32,4 +32,5 @@ stages:
 branch:
   include:
   - master
+  event: [push，pull_request]
 notification: {}
