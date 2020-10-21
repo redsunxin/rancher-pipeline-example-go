@@ -10,9 +10,7 @@ stages:
         go build -o bin/hello-server
         go test -cover
   when:
-    event:
-      include:
-      - push
+    event: {}
 - name: Publish
   steps:
   - publishImageConfig:
